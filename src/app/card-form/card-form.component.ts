@@ -16,4 +16,8 @@ export class CardFormComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  getControl(controlName: string) {
+    return this.cardForm.get(controlName);
+  }
 }
