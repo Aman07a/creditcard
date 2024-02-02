@@ -23,4 +23,8 @@ export class CardFormComponent implements OnInit {
   getControl(controlName: string) {
     return this.cardForm.get(controlName);
   }
+
+  onSubmit() {
+    console.log('Form was submitted');
+  }
 }
