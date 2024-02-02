@@ -1,5 +1,17 @@
 <form [formGroup]="cardForm">
   <app-input label="Name" [control]="getControl('name')"></app-input>
+  <app-input
+    label="Card Number"
+    [control]="getControl('cardNumber')"
+  ></app-input>
+  <app-input
+    label="Expiration"
+    [control]="getControl('expiration')"
+  ></app-input>
+  <app-input
+    label="Security Code"
+    [control]="getControl('securityCode')"
+  ></app-input>
 </form>
 <hr />
 <div>Form Contents: {{ cardForm.value | json }}</div>
